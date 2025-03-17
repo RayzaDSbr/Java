@@ -4,7 +4,7 @@
  */
 package exerciciopratico1;
 //Atributos
-public class Pessoa {
+public class Pessoa  { //CLASSE MÃE
     private String nome,sexo;
     private int idade;
 
@@ -44,5 +44,11 @@ public class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", sexo=" + sexo + ", idade=" + idade + '}';
+    }
+    
     
 }
